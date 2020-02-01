@@ -1,19 +1,28 @@
-/* 
- * File:   I2C.h
- * Author: xpress_embedo
+/*
+ * @file i2c.h
+ * @author xpress_embedo
+ * @date 1 Feb, 2020
+ * 
+ * @brief This file contains I2C drivers for PIC18F micro-controller
  *
- * Created on 1 February, 2020, 3:49 AM
  */
 
 #ifndef I2C_H
 #define I2C_H
 
+#include <xc.h>
+#include <stdint.h>
+
 #ifdef  __cplusplus
 extern "C" {
 #endif
 
+// I2C Speed Control Macros
+#define I2C_STANDARD_SPEED        0u
+#define I2C_HIGH_SPEED            1u
+
 /*Public Function Declaration*/
-void I2C_Init( void );
+void I2C_Init( uint8_t speed );
 void I2C_Start( void );
 void I2C_Restart( void );
 void I2C_Stop( void );
