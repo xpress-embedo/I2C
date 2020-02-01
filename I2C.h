@@ -10,8 +10,7 @@
 #ifndef I2C_H
 #define I2C_H
 
-#include <xc.h>
-#include <stdint.h>
+#include "main.h"
 
 #ifdef  __cplusplus
 extern "C" {
