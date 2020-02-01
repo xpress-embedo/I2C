@@ -27,6 +27,7 @@ void I2C_Restart( void );
 void I2C_Stop( void );
 void I2C_Wait( void );
 void I2C_Send( uint8_t data );
+uint8_t I2C_Read ( void );
 
 #ifdef  __cplusplus
 }
